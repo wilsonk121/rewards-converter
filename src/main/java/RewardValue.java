@@ -1,10 +1,10 @@
 public class RewardValue {
 
     double CV;
-    int MV;
+    double MV;
     public RewardValue(double cashValue){
         CV=cashValue;
-        MV=(int)Math.round(cashValue/0.0035);
+        MV=cashValue/0.0035;
     }
     public RewardValue(int milesValue){
         MV=milesValue;
@@ -13,7 +13,7 @@ public class RewardValue {
     public double getCashValue(){
         return CV;
     }
-    public int getMilesValue(){
+    public double getMilesValue(){
         return MV;
     
     }
